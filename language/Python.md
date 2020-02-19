@@ -125,19 +125,22 @@ class Logger(object):
 ```python
 import pandas as pd
 from xlsxwriter.utility import xl_range, xl_rowcol_to_cell
-df.to_excel(
-            self.writer,
-            header=False,
-            index=False,
-            na_rep=Cv.NA_REP,
-            sheet_name=sheet_attr.name,
-            startrow=sheet_attr.first_data_row,
-            startcol=sheet_attr.first_data_col
-       )
+
 writer = pd.ExcelWriter(self.file_name, engine='xlsxwriter')
+df.to_excel(
+    writer,
+    header=False,
+    index=False,
+    na_rep='=#REF!',
+    sheet_name=sheet_attr.name,
+    startrow=sheet_attr.first_data_row,
+    startcol=sheet_attr.first_data_col
+)
+worksheet = writer.sheets[sheet_attr.name]
+
 writer.save()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzQ2MjYwNjYsMTI1NjE2MDA3OCwxNT
+eyJoaXN0b3J5IjpbLTE0Nzg3ODQzNjQsMTI1NjE2MDA3OCwxNT
 g0MTk4MzA0LDIwMDU4MzExMDQsLTcwMTE3MDIwNF19
 -->
