@@ -1,3 +1,25 @@
+# main
+```python
+        parser = argparse.ArgumentParser(
+            description="Search for the difference of PX power across stage."
+        )
+        parser.add_argument(
+            'db_file',
+            help='the project which you want to query',
+            nargs=1,
+        )
+        parser.add_argument(
+            '-o',
+            default='out.csv',
+            dest='outputFile',
+            help='output file name (default: out.csv)',
+        )
+        args = parser.parse_args()
+        
+if __name__ == '__main__':
+    main()
+```
+
 # unittest
 
 ```python
@@ -19,6 +41,7 @@ class MyTestCase(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main(verbosity=2)
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMTE3MDIwNF19
+eyJoaXN0b3J5IjpbMjAwNTgzMTEwNCwtNzAxMTcwMjA0XX0=
 -->
