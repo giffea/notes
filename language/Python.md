@@ -121,7 +121,14 @@ class Logger(object):
         self.file_handler.setLevel(logging.INFO)
         self.logger.addHandler(self.file_handler)
   ```
+# Excel
+```python
+import pandas as pd
+from xlsxwriter.utility import xl_range, xl_rowcol_to_cell
+writer = pd.ExcelWriter(self.file_name, engine='xlsxwriter')
+writer.save()
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NDE5ODMwNCwyMDA1ODMxMTA0LC03MD
-ExNzAyMDRdfQ==
+eyJoaXN0b3J5IjpbMTI1NjE2MDA3OCwxNTg0MTk4MzA0LDIwMD
+U4MzExMDQsLTcwMTE3MDIwNF19
 -->
