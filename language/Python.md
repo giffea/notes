@@ -1,5 +1,7 @@
 # main ()
 ```python
+def main():
+	try:
         parser = argparse.ArgumentParser(
             description="haha."
         )
@@ -10,11 +12,13 @@
         )
         parser.add_argument(
             '-o',
+            '--
             default='out.csv',
             dest='outputFile',
             help='output file name (default: out.csv)',
         )
         args = parser.parse_args()
+        
         
 if __name__ == '__main__':
     main()
@@ -116,6 +120,6 @@ class Logger(object):
         self.logger.addHandler(self.file_handler)
   ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODA5OTgyNDYsMjAwNTgzMTEwNCwtNz
-AxMTcwMjA0XX0=
+eyJoaXN0b3J5IjpbLTE5MzU1NDY0NywyMDA1ODMxMTA0LC03MD
+ExNzAyMDRdfQ==
 -->
