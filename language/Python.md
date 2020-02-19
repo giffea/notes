@@ -1,7 +1,7 @@
-# main
+# main ()
 ```python
         parser = argparse.ArgumentParser(
-            description="Search for the difference of PX power across stage."
+            description="haha."
         )
         parser.add_argument(
             'db_file',
@@ -43,5 +43,6 @@ if __name__ == '__main__':
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTgzMTEwNCwtNzAxMTcwMjA0XX0=
+eyJoaXN0b3J5IjpbNzIwNTY3Mjk3LDIwMDU4MzExMDQsLTcwMT
+E3MDIwNF19
 -->
