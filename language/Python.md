@@ -12,13 +12,15 @@ def main():
         )
         parser.add_argument(
             '-o',
-            '--
+            '--output',
             default='out.csv',
             dest='outputFile',
             help='output file name (default: out.csv)',
         )
         args = parser.parse_args()
         
+    except ValueError as error:
+        logger.exception(error.args)  
         
 if __name__ == '__main__':
     main()
@@ -120,6 +122,6 @@ class Logger(object):
         self.logger.addHandler(self.file_handler)
   ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzU1NDY0NywyMDA1ODMxMTA0LC03MD
+eyJoaXN0b3J5IjpbMTU4NDE5ODMwNCwyMDA1ODMxMTA0LC03MD
 ExNzAyMDRdfQ==
 -->
