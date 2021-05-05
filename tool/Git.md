@@ -14,9 +14,7 @@
     
  ```
 [remote "origin-bt"]
-
 url = http://gerrit.www.inc:8080/bt
-
 fetch = +refs/heads/*:refs/remotes/origin-bt/*
 ```
 ‌
@@ -30,5 +28,5 @@ fetch = +refs/heads/*:refs/remotes/origin-bt/*
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUxMzgwMTZdfQ==
+eyJoaXN0b3J5IjpbLTM0MDU1NTgwOCw4NTEzODAxNl19
 -->
