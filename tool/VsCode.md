@@ -39,9 +39,33 @@ Plugin: Material Icon Theme, PHP Debug, PHP Intelephense, Vim
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
 }
-
+```
 # setup debug
-> Written with [StackEdit](https://stackedit.io/).
+```
+   "configurations": [
+        {
+            "name": "Listen for XDebug",
+            "type": "php",
+            "request": "launch",
+            // "stopOnEntry": true,
+            "port": 9000,
+
+            // server -> local
+            "pathMappings": {
+                "/var/www/html/web_path": "${workspaceRoot}",
+            }
+        },
+        {
+            "name": "Launch currently open script",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 9000
+        }
+    ]
+   ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NzA0OTQzM119
+eyJoaXN0b3J5IjpbLTE5ODMxMjYxOTFdfQ==
 -->
