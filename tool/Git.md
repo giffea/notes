@@ -9,7 +9,7 @@ git lfs pull
 # git subrepo
 Tutorial: [https://github.com/ingydotnet/git-subrepo  
 ](https://github.com/ingydotnet/git-subrepo)
-subrepo vs submodule vs subtree: [https://github.com/ingydotnet/git-subrepo/blob/master/doc/intro-to-subrepo.swim](https://github.com/ingydotnet/git-subrepo/blob/master/doc/intro-to-subrepo.swim)
+[subrepo vs submodule vs subtree](https://github.com/ingydotnet/git-subrepo/blob/master/doc/intro-to-subrepo.swim)
 
 -   Turn an existing subdirectory into a subrepo.  
     git subrepo init <subdir> -r <remote>  
@@ -23,16 +23,16 @@ subrepo vs submodule vs subtree: [https://github.com/ingydotnet/git-subrepo/blob
     git subrepo clone <repository> <subdir>  
     
 
-## git submodule
+# git submodule
 
 [https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/](https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/)
 
-git submodule add [https://gerrit.mediatek.inc:/TPPA/stateBased](https://gerrit.mediatek.inc/TPPA/stateBased) # add a submodule to current repo  
-git clone --recursive  [https://gerrit.mediatek.inc/TPPA/kernel](https://gerrit.mediatek.inc/TPPA/kernel) # clone whole TPPA/kernel repo  
+git submodule add [https://gerrit.inc:/stateBased](https://gerrit.mediatek.inc/TPPA/stateBased) # add a submodule to current repo  
+git clone --recursive  [https://gerrit.inc/kernel](https://gerrit.mediatek.inc/TPPA/kernel) # clone whole TPPA/kernel repo  
 git submodule update --init # clone submodule if TPPA/kernel is already existed  
 git submodule update --remote # pull submodule updates
 
-## git subtree
+# git subtree
 
 - split subtree from original repo 
 git subtree split -P src/bt -b bt ## 會產生一個branch, 只包含bt/的相關commit 
@@ -62,5 +62,5 @@ git subtree pull -P src/bt origin-bt master
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NzQyNDMwMCw4NTEzODAxNl19
+eyJoaXN0b3J5IjpbLTE3Nzc5NjIyMjcsODUxMzgwMTZdfQ==
 -->
