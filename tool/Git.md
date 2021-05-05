@@ -9,18 +9,16 @@
     
 -   import subtree repo to a repo 
 \> git rm -r src/bt ## 先移除既有的bt/* 
-- \> git commit > git remote add origin-bt http://gerrit.xxx.inc:8080/bt 
-- \> git subtree add -P src/bt origin-bt master ## 加上--squash 會將所有subtree commit合成一個commit
+\> git commit > git remote add origin-bt http://gerrit.xxx.inc:8080/bt 
+\> git subtree add -P src/bt origin-bt master ## 加上--squash 會將所有subtree commit合成一個commit
     
-
-exit: Ctrl+↩
-
+ ```
 [remote "origin-bt"]
 
 url = http://gerrit.www.inc:8080/bt
 
 fetch = +refs/heads/*:refs/remotes/origin-bt/*
-
+```
 ‌
 
 -   commit to subtree master > git subtree push -P src/bt origin-bt master
@@ -32,5 +30,5 @@ fetch = +refs/heads/*:refs/remotes/origin-bt/*
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5Mjk2NTI2N119
+eyJoaXN0b3J5IjpbODUxMzgwMTZdfQ==
 -->
