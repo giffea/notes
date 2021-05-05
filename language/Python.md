@@ -27,6 +27,7 @@ if __name__ == '__main__':
 ```
 
 # unittest
+python3 -m unittest discover . -v
 
 ```python
 import unittest
@@ -141,54 +142,27 @@ worksheet = writer.sheets[sheet_attr.name]
 writer.save()
 ```
 
-# 
+# Python virtualenv
 
-Python virtualenv
-
-‌
-
-## 
-
-Setup virtualenv
-
-‌
+## Setup virtualenv
 
 [[Python] How to set up python virtual environment](http://hiwiki.mediatek.inc/display/ITSW/%5BPython%5D+How+to+set+up+python+virtual+environment)
 
-‌
-
 1.  set ~/.pip/pip.conf
-    
     [global] index-url = http://your_ip/pypi/simple [install] trusted-host = your_ip
-    
 2.  cd ~/local virtualenv -p python3.6 pyEnv source pyEnv/bin/activate
-    
 3.  Install required modules by one of following method (a or b).
-    
-    1.  pip install -r requirements.txt
-        
+    1.  pip install -r requirements.txt 
     2.  pip install -U pip setuptools pip install 'Cython>=0.20,<0.25' pip install cassandra-driver jupyter matplotlib pandas numpy scipy
-        
-    
 
-‌
-
-## 
-
-Usage
-
-‌
-
--   cd ~/TPPA/local
-    
+## Usage
 -   source pyEnv/bin/active # enable virtualenv
-    
 -   deactiveate # disable virtaulenv
 
 ## Export virtualenv setting for others
 -   pip freeze > requirements.txt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0ODc2NjU2MywtMTQ3ODc4NDM2NCwxMj
-U2MTYwMDc4LDE1ODQxOTgzMDQsMjAwNTgzMTEwNCwtNzAxMTcw
-MjA0XX0=
+eyJoaXN0b3J5IjpbLTIwMDI0MTAzNzgsLTE0Nzg3ODQzNjQsMT
+I1NjE2MDA3OCwxNTg0MTk4MzA0LDIwMDU4MzExMDQsLTcwMTE3
+MDIwNF19
 -->
