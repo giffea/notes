@@ -1,7 +1,6 @@
 # git bisect
 
 # git lfs
-(https://wiki.mediatek.inc/pages/viewpage.action?pageId=598639040)
 git lfs install
 git lfs trace *.bin
 git lfs pull
@@ -13,7 +12,7 @@ Tutorial: [https://github.com/ingydotnet/git-subrepo
 
 -   Turn an existing subdirectory into a subrepo.  
     git subrepo init <subdir> -r <remote>  
-    ex. git subrepo init src/bt -r [https://gerrit.mediatek.inc/TPPA/bt](https://gerrit.mediatek.inc/TPPA/bt)
+    ex. git subrepo init src/bt -r [https://gerrit.inc/bt](https://gerrit.inc/bt)
 -   Update the subrepo subdir with the latest upstream changes.  
     git subrepo pull <subdir>
 -   Push a properly merged subrepo branch back upstream.  
@@ -27,8 +26,8 @@ Tutorial: [https://github.com/ingydotnet/git-subrepo
 
 [https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/](https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/)
 
-git submodule add [https://gerrit.inc:/stateBased](https://gerrit.mediatek.inc/TPPA/stateBased) # add a submodule to current repo  
-git clone --recursive  [https://gerrit.inc/kernel](https://gerrit.mediatek.inc/TPPA/kernel) # clone whole TPPA/kernel repo  
+git submodule add [https://gerrit.inc/p1](https://gerrit.inc/p1) # add a submodule to current repo  
+git clone --recursive  [https://gerrit.inc/p2](https://gerrit.inc/p2) # clone whole l repo  
 git submodule update --init # clone submodule if TPPA/kernel is already existed  
 git submodule update --remote # pull submodule updates
 
@@ -62,5 +61,5 @@ git subtree pull -P src/bt origin-bt master
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzc5NjIyMjcsODUxMzgwMTZdfQ==
+eyJoaXN0b3J5IjpbLTE5ODc0OTQ0NTQsODUxMzgwMTZdfQ==
 -->
