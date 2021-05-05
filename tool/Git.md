@@ -27,8 +27,8 @@ Tutorial: [https://github.com/ingydotnet/git-subrepo
 [https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/](https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/)
 
 git submodule add [https://gerrit.inc/p1](https://gerrit.inc/p1) # add a submodule to current repo  
-git clone --recursive  [https://gerrit.inc/p2](https://gerrit.inc/p2) # clone whole l repo  
-git submodule update --init # clone submodule if TPPA/kernel is already existed  
+git clone --recursive  [https://gerrit.inc/p2](https://gerrit.inc/p2) # clone whole p2 repo  
+git submodule update --init # clone submodule if p2 is already existed  
 git submodule update --remote # pull submodule updates
 
 # git subtree
@@ -61,5 +61,5 @@ git subtree pull -P src/bt origin-bt master
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODc0OTQ0NTQsODUxMzgwMTZdfQ==
+eyJoaXN0b3J5IjpbLTk4Mzk5MzA5Myw4NTEzODAxNl19
 -->
