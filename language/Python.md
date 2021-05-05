@@ -146,8 +146,6 @@ writer.save()
 
 ## Setup virtualenv
 
-[[Python] How to set up python virtual environment](http://hiwiki.mediatek.inc/display/ITSW/%5BPython%5D+How+to+set+up+python+virtual+environment)
-
 1.  set ~/.pip/pip.conf
     [global] index-url = http://your_ip/pypi/simple [install] trusted-host = your_ip
 2.  cd ~/local virtualenv -p python3.6 pyEnv source pyEnv/bin/activate
@@ -162,7 +160,7 @@ writer.save()
 ## Export virtualenv setting for others
 -   pip freeze > requirements.txt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDI0MTAzNzgsLTE0Nzg3ODQzNjQsMT
-I1NjE2MDA3OCwxNTg0MTk4MzA0LDIwMDU4MzExMDQsLTcwMTE3
-MDIwNF19
+eyJoaXN0b3J5IjpbLTk3NDg4NzcsLTE0Nzg3ODQzNjQsMTI1Nj
+E2MDA3OCwxNTg0MTk4MzA0LDIwMDU4MzExMDQsLTcwMTE3MDIw
+NF19
 -->
