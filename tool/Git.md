@@ -1,10 +1,36 @@
-git bisect find error commit
+# git bisect
 
-# git subrepo 
-Tutorial: [https://github.com/ingydotnet/git-subrepo](https://github.com/ingydotnet/git-subrepo)
+# git lfs
+(https://wiki.mediatek.inc/pages/viewpage.action?pageId=598639040)
+git lfs install
+git lfs trace *.bin
+git lfs pull
 
-# subrepo vs submodule vs subtree
- [https://github.com/ingydotnet/git-subrepo/blob/master/doc/intro-to-subrepo.swim](https://github.com/ingydotnet/git-subrepo/blob/master/doc/intro-to-subrepo.swim) Turn an existing subdirectory into a subrepo. git subrepo init -r ex. git subrepo init src/bt -r [http://gerrit.inc:8080/TPPA/bt](http://gerrit.inc:8080/TPPA/bt) Update the subrepo subdir with the latest upstream changes. git subrepo pull Push a properly merged subrepo branch back upstream. git subrepo push Add a repository as a subrepo in a subdir of your repository. git subrepo clone git submodule [https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/](https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/) git submodule add [http://gerrit.inc:8080/TPPA/stateBased](http://gerrit.inc:8080/TPPA/stateBased) # add a submodule to current repo git clone --recursive [http://gerrit.inc:8080/TPPA/kernel](http://gerrit.inc:8080/TPPA/kernel) # clone whole TPPA/kernel repo git submodule update --init # clone submodule if TPPA/kernel is already existed git submodule update --remote # pull submodule updates
+# git subrepo
+Tutorial: [https://github.com/ingydotnet/git-subrepo  
+](https://github.com/ingydotnet/git-subrepo)
+subrepo vs submodule vs subtree: [https://github.com/ingydotnet/git-subrepo/blob/master/doc/intro-to-subrepo.swim](https://github.com/ingydotnet/git-subrepo/blob/master/doc/intro-to-subrepo.swim)
+
+-   Turn an existing subdirectory into a subrepo.  
+    git subrepo init <subdir> -r <remote>  
+    ex. git subrepo init src/bt -r [https://gerrit.mediatek.inc/TPPA/bt](https://gerrit.mediatek.inc/TPPA/bt)
+-   Update the subrepo subdir with the latest upstream changes.  
+    git subrepo pull <subdir>
+-   Push a properly merged subrepo branch back upstream.  
+    git subrepo push <subdir>  
+    
+-   Add a repository as a subrepo in a subdir of your repository.  
+    git subrepo clone <repository> <subdir>  
+    
+
+## git submodule
+
+[https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/](https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/)
+
+git submodule add [https://gerrit.mediatek.inc:/TPPA/stateBased](https://gerrit.mediatek.inc/TPPA/stateBased) # add a submodule to current repo  
+git clone --recursive  [https://gerrit.mediatek.inc/TPPA/kernel](https://gerrit.mediatek.inc/TPPA/kernel) # clone whole TPPA/kernel repo  
+git submodule update --init # clone submodule if TPPA/kernel is already existed  
+git submodule update --remote # pull submodule updates
 
 ## git subtree
 
@@ -36,5 +62,5 @@ git subtree pull -P src/bt origin-bt master
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MzYzMDY3Nyw4NTEzODAxNl19
+eyJoaXN0b3J5IjpbLTQ2NzQyNDMwMCw4NTEzODAxNl19
 -->
