@@ -1,3 +1,11 @@
+git bisect find error commit
+
+# git subrepo 
+Tutorial: [https://github.com/ingydotnet/git-subrepo](https://github.com/ingydotnet/git-subrepo)
+
+# subrepo vs submodule vs subtree
+ [https://github.com/ingydotnet/git-subrepo/blob/master/doc/intro-to-subrepo.swim](https://github.com/ingydotnet/git-subrepo/blob/master/doc/intro-to-subrepo.swim) Turn an existing subdirectory into a subrepo. git subrepo init -r ex. git subrepo init src/bt -r [http://gerrit.inc:8080/TPPA/bt](http://gerrit.inc:8080/TPPA/bt) Update the subrepo subdir with the latest upstream changes. git subrepo pull Push a properly merged subrepo branch back upstream. git subrepo push Add a repository as a subrepo in a subdir of your repository. git subrepo clone git submodule [https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/](https://services.github.com/on-demand/downloads/submodule-vs-subtree-cheat-sheet/) git submodule add [http://gerrit.inc:8080/TPPA/stateBased](http://gerrit.inc:8080/TPPA/stateBased) # add a submodule to current repo git clone --recursive [http://gerrit.inc:8080/TPPA/kernel](http://gerrit.inc:8080/TPPA/kernel) # clone whole TPPA/kernel repo git submodule update --init # clone submodule if TPPA/kernel is already existed git submodule update --remote # pull submodule updates
+
 ## git subtree
 
 - split subtree from original repo 
@@ -28,5 +36,5 @@ git subtree pull -P src/bt origin-bt master
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDc2NTM0NCw4NTEzODAxNl19
+eyJoaXN0b3J5IjpbLTc5MzYzMDY3Nyw4NTEzODAxNl19
 -->
