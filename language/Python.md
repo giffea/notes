@@ -161,7 +161,7 @@ writer.save()
 -   pip freeze > requirements.txt
 
 ## Seaborn
-``` python
+```python
 import matplotlib.pyplot as plt
 import seaborn as sns
 plt.figure(figsize=(10, 10))
@@ -179,7 +179,7 @@ ax.set(
 )
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzk5Njk3ODUsLTk3NDg4NzcsLTE0Nz
-g3ODQzNjQsMTI1NjE2MDA3OCwxNTg0MTk4MzA0LDIwMDU4MzEx
-MDQsLTcwMTE3MDIwNF19
+eyJoaXN0b3J5IjpbMTg5NzQzMjUwOSwtOTc0ODg3NywtMTQ3OD
+c4NDM2NCwxMjU2MTYwMDc4LDE1ODQxOTgzMDQsMjAwNTgzMTEw
+NCwtNzAxMTcwMjA0XX0=
 -->
