@@ -161,26 +161,25 @@ writer.save()
 -   pip freeze > requirements.txt
 
 ## Seaborn
+``` python
 import matplotlib.pyplot as plt
 import seaborn as sns
-        plt.figure(figsize=(10, 10))
-        plt.subplot(2, 1, 1)
-        ax = sns.scatterplot(
-            px_powers,
-            estimation_powers,
-            legend='full',
-            size=self.quantities,
-        )
-        ax.set(
-            title=f'value without quantity',
-            xlabel=f'{category} PX',
-            ylabel=f'{category} estimation',
-        )
-        max_ = max(px_powers.max(), estimation_powers.max())
-        plt.plot([0, max_], [0, max_], color='green')
-
+plt.figure(figsize=(10, 10))
+plt.subplot(2, 1, 1)
+ax = sns.scatterplot(
+    x,
+    y,
+    legend='full',
+    size=self.quantities,
+)
+ax.set(
+    title=f'titel',
+    xlabel=f'xlabel',
+    ylabel=f'ylabel',
+)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDMwMTExMjQsLTk3NDg4NzcsLTE0Nz
+eyJoaXN0b3J5IjpbLTIwMzk5Njk3ODUsLTk3NDg4NzcsLTE0Nz
 g3ODQzNjQsMTI1NjE2MDA3OCwxNTg0MTk4MzA0LDIwMDU4MzEx
 MDQsLTcwMTE3MDIwNF19
 -->
