@@ -159,8 +159,28 @@ writer.save()
 
 ## Export virtualenv setting for others
 -   pip freeze > requirements.txt
+
+## Seaborn
+import matplotlib.pyplot as plt
+import seaborn as sns
+        plt.figure(figsize=(10, 10))
+        plt.subplot(2, 1, 1)
+        ax = sns.scatterplot(
+            px_powers,
+            estimation_powers,
+            legend='full',
+            size=self.quantities,
+        )
+        ax.set(
+            title=f'value without quantity',
+            xlabel=f'{category} PX',
+            ylabel=f'{category} estimation',
+        )
+        max_ = max(px_powers.max(), estimation_powers.max())
+        plt.plot([0, max_], [0, max_], color='green')
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NDg4NzcsLTE0Nzg3ODQzNjQsMTI1Nj
-E2MDA3OCwxNTg0MTk4MzA0LDIwMDU4MzExMDQsLTcwMTE3MDIw
-NF19
+eyJoaXN0b3J5IjpbLTEzNDMwMTExMjQsLTk3NDg4NzcsLTE0Nz
+g3ODQzNjQsMTI1NjE2MDA3OCwxNTg0MTk4MzA0LDIwMDU4MzEx
+MDQsLTcwMTE3MDIwNF19
 -->
