@@ -164,27 +164,16 @@ writer.save()
 ```python
 import matplotlib.pyplot as plt
 import seaborn as sns
-plt.figure(figsize=(10, 10))
-plt.subplot(2, 1, 1)
-ax = sns.scatterplot(
-    x,
-    y,
-    legend='full',
-    size=self.quantities,
-)
-ax.set(
-    title=f'titel',
-    xlabel=f'xlabel',
-    ylabel=f'ylabel',
-)
-    fig = ax.get_figure()
-    fig.savefig(f'{title}.png', bbox_inches="tight", facecolor="#FFFFFF")
-
-
-
+plt.figure(figsize=(18, 8))
+plt.xticks(rotation=45)
+df = pd.DataFrame(data, columns=['interval', 'count', 'type'])
+ax = sns.barplot(x='interval', y='count', hue='type', data=df)
+ax.set(title='', xlabel='', ylabel='')
+fig = ax.get_figure()
+fig.savefig(f'xx.png', bbox_inches="tight", facecolor="#FFFFFF")
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNjk1ODI3MSwxODk3NDMyNTA5LC05Nz
+eyJoaXN0b3J5IjpbLTEzNDY0NDYyNiwxODk3NDMyNTA5LC05Nz
 Q4ODc3LC0xNDc4Nzg0MzY0LDEyNTYxNjAwNzgsMTU4NDE5ODMw
 NCwyMDA1ODMxMTA0LC03MDExNzAyMDRdfQ==
 -->
