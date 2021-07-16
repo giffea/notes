@@ -177,9 +177,14 @@ ax.set(
     xlabel=f'xlabel',
     ylabel=f'ylabel',
 )
+    fig = ax.get_figure()
+    fig.savefig(f'{title}.png', bbox_inches="tight", facecolor="#FFFFFF")
+
+
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzQzMjUwOSwtOTc0ODg3NywtMTQ3OD
-c4NDM2NCwxMjU2MTYwMDc4LDE1ODQxOTgzMDQsMjAwNTgzMTEw
-NCwtNzAxMTcwMjA0XX0=
+eyJoaXN0b3J5IjpbLTgyNjk1ODI3MSwxODk3NDMyNTA5LC05Nz
+Q4ODc3LC0xNDc4Nzg0MzY0LDEyNTYxNjAwNzgsMTU4NDE5ODMw
+NCwyMDA1ODMxMTA0LC03MDExNzAyMDRdfQ==
 -->
