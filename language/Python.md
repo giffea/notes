@@ -26,6 +26,8 @@ if __name__ == '__main__':
     main()
 ```
 
+# setdefault
+dict_a.setdefault(key, []).append(value0)
 
 # unittest
 python3 -m unittest discover . -v
@@ -174,7 +176,7 @@ fig = ax.get_figure()
 fig.savefig(f'xx.png', bbox_inches="tight", facecolor="#FFFFFF")
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNzEyNjU5MiwtMTM0NjQ0NjI2LDE4OT
+eyJoaXN0b3J5IjpbLTUyMDg1ODA1MSwtMTM0NjQ0NjI2LDE4OT
 c0MzI1MDksLTk3NDg4NzcsLTE0Nzg3ODQzNjQsMTI1NjE2MDA3
 OCwxNTg0MTk4MzA0LDIwMDU4MzExMDQsLTcwMTE3MDIwNF19
 -->
