@@ -29,22 +29,28 @@ class NullStream
 
 # google test
 ```cpp
-#include <gteskt/gtest.h>
-class Haha_test : public testing::Test {
+#include <gtest/gtest.h>
+class HahaTest : public testing::Test {
 public:
     static void SetUpTestCase();
     void SetUp() override;
     void TearDown() override;
 }
 
-TEST_F(Haha_test, func1)
+TEST_F(HahaTest, func1)
 {
 }
+```
 
+```cpp
 #include <gtest/gtest_prod.h>
+class Haha {
+    friend class HahaTest;
+    FRIEND_TEST(HahaTest, func1);
+};
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ2ODMwNTIsNzMzNDI2ODgxLC0xMTM3MT
-IzMDc5XX0=
+eyJoaXN0b3J5IjpbLTE5MTk2ODk4MTgsNzMzNDI2ODgxLC0xMT
+M3MTIzMDc5XX0=
 -->
