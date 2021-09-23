@@ -37,10 +37,10 @@ public:
     void TearDown() override;
 }
 
-TEST_F(Haha_test, func1){
+TEST_F(Haha_test, func1)
+{
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTA5ODc0MDksLTExMzcxMjMwNzldfQ
-==
+eyJoaXN0b3J5IjpbNzMzNDI2ODgxLC0xMTM3MTIzMDc5XX0=
 -->
