@@ -29,7 +29,7 @@ class NullStream
 
 # google test
 ```cpp
-#include <gtest/gtest.h>
+#include <gteskt/gtest.h>
 class Haha_test : public testing::Test {
 public:
     static void SetUpTestCase();
@@ -40,7 +40,11 @@ public:
 TEST_F(Haha_test, func1)
 {
 }
+
+#include <gtest/gtest_prod.h>
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzNDI2ODgxLC0xMTM3MTIzMDc5XX0=
+eyJoaXN0b3J5IjpbNzQ2ODMwNTIsNzMzNDI2ODgxLC0xMTM3MT
+IzMDc5XX0=
 -->
