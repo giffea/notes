@@ -29,8 +29,18 @@ class NullStream
 
 # google test
 ```cpp
+#include <gtest/gtest.h>
+class Haha_test : public testing::Test {
+public:
+    static void SetUpTestCase();
+    void SetUp() override;
+    void TearDown() override;
+}
+
+TEST_F(Haha_test, func1){
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTAyODEwOTYsLTExMzcxMjMwNzldfQ
+eyJoaXN0b3J5IjpbLTEzNTA5ODc0MDksLTExMzcxMjMwNzldfQ
 ==
 -->
