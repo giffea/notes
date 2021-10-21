@@ -145,6 +145,12 @@ worksheet = writer.sheets[sheet_attr.name]
 writer.save()
 ```
 
+# Pandas
+``` python3
+0930_bbb_irq_trim.bin
+0930_bbb_irq_trim.bin
+```
+
 # Python virtualenv
 
 ## Setup virtualenv
@@ -161,9 +167,9 @@ writer.save()
 -   deactiveate # disable virtaulenv
 
 ## Export virtualenv setting for others
--   pip freeze > requirements.txt
+-   pip freeze >requirements.txt
 
-## Seaborn
+# Seaborn
 ```python
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -176,7 +182,8 @@ fig = ax.get_figure()
 fig.savefig(f'xx.png', bbox_inches="tight", facecolor="#FFFFFF")
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMDg1ODA1MSwtMTM0NjQ0NjI2LDE4OT
-c0MzI1MDksLTk3NDg4NzcsLTE0Nzg3ODQzNjQsMTI1NjE2MDA3
-OCwxNTg0MTk4MzA0LDIwMDU4MzExMDQsLTcwMTE3MDIwNF19
+eyJoaXN0b3J5IjpbMTY0ODI5OTg2MywtNTIwODU4MDUxLC0xMz
+Q2NDQ2MjYsMTg5NzQzMjUwOSwtOTc0ODg3NywtMTQ3ODc4NDM2
+NCwxMjU2MTYwMDc4LDE1ODQxOTgzMDQsMjAwNTgzMTEwNCwtNz
+AxMTcwMjA0XX0=
 -->
