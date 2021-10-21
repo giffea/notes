@@ -147,8 +147,9 @@ writer.save()
 
 # Pandas
 ``` python3
-0930_bbb_irq_trim.bin
-0930_bbb_irq_trim.bin
+df = indexl_df['info'].str.extract('.*stall=(?P<info>\S+)')
+df2 = df['info'].str.split('|', expand=True)
+sys_stall_df = pd.concat([indexl_df[['time']], df2], axis=1)
 ```
 
 # Python virtualenv
@@ -182,8 +183,8 @@ fig = ax.get_figure()
 fig.savefig(f'xx.png', bbox_inches="tight", facecolor="#FFFFFF")
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0ODI5OTg2MywtNTIwODU4MDUxLC0xMz
-Q2NDQ2MjYsMTg5NzQzMjUwOSwtOTc0ODg3NywtMTQ3ODc4NDM2
-NCwxMjU2MTYwMDc4LDE1ODQxOTgzMDQsMjAwNTgzMTEwNCwtNz
-AxMTcwMjA0XX0=
+eyJoaXN0b3J5IjpbLTEzMjA5NjA0NTcsLTUyMDg1ODA1MSwtMT
+M0NjQ0NjI2LDE4OTc0MzI1MDksLTk3NDg4NzcsLTE0Nzg3ODQz
+NjQsMTI1NjE2MDA3OCwxNTg0MTk4MzA0LDIwMDU4MzExMDQsLT
+cwMTE3MDIwNF19
 -->
