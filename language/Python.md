@@ -179,14 +179,20 @@ import seaborn as sns
 plt.figure(figsize=(18, 8))
 plt.xticks(rotation=45)
 df = pd.DataFrame(data, columns=['interval', 'count', 'type'])
+fig, ax1 = plt.subplots(figsize=(18, 8))
 ax = sns.barplot(x='interval', y='count', hue='type', data=df)
 ax.set(title='', xlabel='', ylabel='')
 fig = ax.get_figure()
 fig.savefig(f'xx.png', bbox_inches="tight", facecolor="#FFFFFF")
+
+ax2 = ax1.twinx()
+ax2.set(ylabel='label', ylim=(0, 110))
+handles, _ = ax2.get_legend_handles_labels()
+ax2.legend(loc='center right', handles=handles, labels=second_labels)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODMxMTUyNzYsLTEzMjA5NjA0NTcsLT
-UyMDg1ODA1MSwtMTM0NjQ0NjI2LDE4OTc0MzI1MDksLTk3NDg4
-NzcsLTE0Nzg3ODQzNjQsMTI1NjE2MDA3OCwxNTg0MTk4MzA0LD
-IwMDU4MzExMDQsLTcwMTE3MDIwNF19
+eyJoaXN0b3J5IjpbMTI2NzQzNTY1LC0xODgzMTE1Mjc2LC0xMz
+IwOTYwNDU3LC01MjA4NTgwNTEsLTEzNDY0NDYyNiwxODk3NDMy
+NTA5LC05NzQ4ODc3LC0xNDc4Nzg0MzY0LDEyNTYxNjAwNzgsMT
+U4NDE5ODMwNCwyMDA1ODMxMTA0LC03MDExNzAyMDRdfQ==
 -->
